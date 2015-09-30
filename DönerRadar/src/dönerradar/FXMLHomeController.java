@@ -25,12 +25,16 @@ public class FXMLHomeController implements Initializable {
 
     @FXML
     private Button btnMenu;
+    
+    @FXML
+    private ImageView imgView;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
+        imgView.setImage(new Image("dönerradar/images/doner.jpg"));
     }    
     
     public void handleMenuButton(){
