@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLMenuController">
+   <children>
+      <Button layoutX="6.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="31.0" prefWidth="145.0" text="Home" />
+      <Button layoutX="5.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Restaurant" />
+      <Button layoutX="5.0" layoutY="192.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Bestellijst" />
+      <Button layoutX="5.0" layoutY="260.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Groepen" />
+      <Button layoutX="5.0" layoutY="333.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Schuldenlijst" />
+      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Naamkiezer" />
+   </children>
+</AnchorPane>
