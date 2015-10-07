@@ -48,7 +48,7 @@ public class FXMLLocationFinderController implements Initializable {
     }    
     
     public void handleButton() throws IOException {
-        Parent p = FXMLLoader.load(getClass().getResource("Restaurants.fxml"));
+        Parent p = FXMLLoader.load(getClass().getResource("FXMLRestaurants.fxml"));
         DönerRadar.currentStage.getScene().setRoot(p);
     }
     
