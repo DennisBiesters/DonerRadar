@@ -21,7 +21,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="152.0" layoutY="511.0" mnemonicParsing="false" text="Random">
+      <Button layoutX="152.0" layoutY="511.0" mnemonicParsing="false" onAction="#selectRandomPerson" text="Random">
          <font>
             <Font size="16.0" />
          </font>
