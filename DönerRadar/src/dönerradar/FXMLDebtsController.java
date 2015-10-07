@@ -7,11 +7,8 @@ package dönerradar;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,37 +16,32 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
  *
- * @author Jelle
+ * @author Dennis
  */
-public class FXMLNamePickerController implements Initializable {
+public class FXMLDebtsController implements Initializable {
 
     @FXML
     private Button btnMenu;
     
     @FXML
-    private TextField tfDeelnemerNaam;
+    private ListView lvPersonWithDebts;
     
-    @FXML
-    private ListView lvDeelnemers;
-    
-    private ObservableList<String> deelnemers;
+    private ObservableList<String> personsWithDept;
     
     /**
      * Initializes the controller class.
-     */
+     */  
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        deelnemers = FXCollections.observableArrayList("Dennis", "Jordy", "Sven", "Jelle");
-        lvDeelnemers.setItems(deelnemers);
+        personsWithDept = FXCollections.observableArrayList("Dennis €5,-", "Jordy €10,-", "Sven €13,-", "Jelle €133,-");
+        lvPersonWithDebts.setItems(personsWithDept);
     }    
     
     public void handleMenuButton(){
@@ -61,22 +53,4 @@ public class FXMLNamePickerController implements Initializable {
             System.out.println(ex.getMessage());
         }
     }
-        
-    public void addDeelnemer()
-    {
-        if (!tfDeelnemerNaam.getText().isEmpty())
-        {
-            tfDeelnemerNaam.clear();
-            deelnemers.add(tfDeelnemerNaam.getText());
-        }  
-    }
-    
-    public void selectRandomPerson()
-    {
-        Random rand = new Random();
-        int index = rand.nextInt(deelnemers.size());
-        JOptionPane.showMessageDialog(null, deelnemers.get(index));
-    }
-    
-    
 }
