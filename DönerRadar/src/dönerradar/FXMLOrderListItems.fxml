@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLOrderListItemController">
+   <children>
+      <Button fx:id="btnMenu" layoutY="-1.0" mnemonicParsing="false" onAction="#handleMenuButton" />
+      <ListView fx:id="listView" layoutX="65.0" layoutY="86.0" prefHeight="403.0" prefWidth="271.0" />
+      <Button fx:id="btAddOrderList" layoutX="92.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleBtAddProduct" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text layoutX="92.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bestellijst: Donerdinsdag">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="153.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product toevoegen">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producten overzicht">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

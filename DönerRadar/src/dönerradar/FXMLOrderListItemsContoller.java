@@ -10,7 +10,10 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -23,38 +26,53 @@ import javafx.scene.image.ImageView;
 /**
  * FXML Controller class
  *
- * @author Dennis
+ * @author Sven
  */
-public class FXMLBestellijstController implements Initializable {
+public class FXMLOrderListItemsContoller implements Initializable {
 
     @FXML
     private Button btnMenu;
-    
-    
+  
     @FXML
     private ListView listView;
-    
+
     @FXML
-    private ImageView imgView;
+    private Button btAddProduct;
+
+    private List<String> productList = Arrays.asList("Durum doner", "Durum kip", "Pizza kebab");
+    private ObservableList<String> obsProductList = FXCollections.observableArrayList(productList);
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        imgView.setImage(new Image("dönerradar/images/doner.jpg"));
+
+        listView.setItems(obsProductList);
+        listView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
+
+            @Override
+            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
+                
+            }
+        });
         
-        List<String> bestellijsten = Arrays.asList("Donerdinsdaglijstje", "Zaterdagavond");
-        listView.setItems(FXCollections.observableList(bestellijsten));
-    }    
-    
-    public void handleMenuButton(){
+    }
+
+    public void handleMenuButton() {
         try {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
-        } catch (IOException ex) {
+        }
+        catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
+
+    public void handleBtAddProduct() {
+        obsProductList.add("Turkse pizza");
+    }
+    
 }
