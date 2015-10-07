@@ -16,7 +16,7 @@
       </Button>
       <Button fx:id="btnMenu" mnemonicParsing="false" onAction="#handleMenuButton" onMouseClicked="#handleMenuButton" />
       <TextField fx:id="tbPostcode" layoutX="126.0" layoutY="253.0" prefHeight="35.0" prefWidth="161.0" />
-      <Label fx:id="lblPostcode" layoutX="126.0" layoutY="228.0" text="Postcode:">
+      <Label fx:id="lblPostcode" layoutX="126.0" layoutY="228.0" text="Plaatsnaam:">
          <font>
             <Font size="14.0" />
          </font>
