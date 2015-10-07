@@ -17,7 +17,13 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lblAddress01" layoutX="28.0" layoutY="553.0" text="Rachelsmolen" />
-      <Label fx:id="lblAddress02" layoutX="28.0" layoutY="570.0" text="5612 Eindhoven" />
+      <Label fx:id="lblAddress01" layoutX="28.0" layoutY="553.0" text="Rachelsmolen">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblAddress02" layoutX="28.0" layoutY="570.0" text="5612 Eindhoven">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>
