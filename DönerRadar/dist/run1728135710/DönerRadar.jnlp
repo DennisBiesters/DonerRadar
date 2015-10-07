@@ -8,11 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-    <jar href="DönerRadar.jar" size="45941" download="eager" />
-=======
     <jar href="DönerRadar.jar" size="47959" download="eager" />
->>>>>>> origin/master
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DönerRadar" >
     <param name="requiredFXVersion" value="8.0+"/>
