@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLNamePickerController">
+   <children>
+      <Button fx:id="btnMenu" layoutX="1.0" mnemonicParsing="false" onAction="#handleMenuButton" />
+      <ListView fx:id="lvDeelnemers" layoutX="100.0" layoutY="154.0" prefHeight="243.0" prefWidth="200.0" />
+      <TextField fx:id="tfDeelnemerNaam" layoutX="100.0" layoutY="429.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAddDeelnemer" layoutX="32.0" layoutY="422.0" mnemonicParsing="false" onAction="#addDeelnemer" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
