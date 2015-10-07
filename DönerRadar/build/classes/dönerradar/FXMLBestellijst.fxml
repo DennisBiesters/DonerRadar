@@ -11,17 +11,21 @@
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLHomeController">
    <children>
       <Button fx:id="btnMenu" layoutY="-1.0" mnemonicParsing="false" onAction="#handleMenuButton" />
-      <ImageView fx:id="imgView" fitHeight="203.0" fitWidth="273.0" layoutX="98.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/doner.jpg" />
-         </image></ImageView>
-      <Button layoutX="52.0" layoutY="400.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Zoek de beste döner">
+      <ImageView fx:id="imgView" fitHeight="203.0" fitWidth="273.0" layoutX="98.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <ListView layoutX="100.0" layoutY="91.0" prefHeight="317.0" prefWidth="200.0" />
+      <Button layoutX="100.0" layoutY="429.0" mnemonicParsing="false" text="+">
          <font>
-            <Font size="28.0" />
-         </font></Button>
-      <Text layoutX="142.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoofdmenu">
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text layoutX="160.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bestellijst">
          <font>
             <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="160.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nieuwe bestellijst">
+         <font>
+            <Font size="16.0" />
          </font>
       </Text>
    </children>

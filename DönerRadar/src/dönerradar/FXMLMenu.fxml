@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -8,11 +9,34 @@
 
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLMenuController">
    <children>
-      <Button layoutX="6.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="31.0" prefWidth="145.0" text="Home" />
-      <Button layoutX="5.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Restaurant" />
-      <Button layoutX="5.0" layoutY="192.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Bestellijst" />
-      <Button layoutX="5.0" layoutY="260.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Groepen" />
-      <Button layoutX="5.0" layoutY="333.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Schuldenlijst" />
-      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleNameChooserButton" prefHeight="31.0" prefWidth="145.0" text="Naamkiezer" />
+      <Button layoutX="6.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="50.0" prefWidth="200.0" text="Hoofdmenu">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="128.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Restaurant">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="196.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Bestellijst">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="266.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Groepen">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleDeptsButton" prefHeight="50.0" prefWidth="200.0" text="Schuldenlijst">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleNameChooserButton" prefHeight="50.0" prefWidth="200.0" text="Naamkiezer">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Text layoutX="174.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
