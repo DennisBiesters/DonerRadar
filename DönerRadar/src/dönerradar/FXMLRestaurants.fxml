@@ -11,7 +11,7 @@
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLRestaurantsController">
    <children>
       <Button fx:id="btnMenu" mnemonicParsing="false" onAction="#handleMenuButton" />
-      <ImageView fx:id="iviewNavi" fitHeight="486.0" fitWidth="394.0" layoutX="6.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iviewNavi" fitHeight="486.0" fitWidth="394.0" layoutX="6.0" layoutY="69.0" onMouseClicked="#handleImageViewClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/navi.PNG" />
          </image></ImageView>

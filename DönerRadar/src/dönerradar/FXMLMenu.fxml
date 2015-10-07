@@ -13,7 +13,7 @@
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button layoutX="5.0" layoutY="128.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Restaurant">
+      <Button layoutX="5.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleRestaurantButton" prefHeight="50.0" prefWidth="200.0" text="Restaurant">
          <font>
             <Font size="24.0" />
          </font></Button>

@@ -70,4 +70,14 @@ public class FXMLMenuController implements Initializable {
             System.out.println(ex.getMessage());
         }
     }
+    
+    public void handleRestaurantButton(){
+        try {
+            Parent window1;
+            window1 = FXMLLoader.load(getClass().getResource("FXMLLocationFinder.fxml"));
+            DönerRadar.currentStage.getScene().setRoot(window1);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 }

@@ -19,26 +19,22 @@ import javafx.scene.image.ImageView;
 /**
  * FXML Controller class
  *
- * @author jordy
+ * @author Dennis
  */
-public class FXMLRestaurantsController implements Initializable {
+public class FXMLRestaurantController implements Initializable {
 
     @FXML
     private Button btnMenu;
-    
-    @FXML
-    private ImageView iviewNavi;
-   
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        iviewNavi.setImage(new Image("dönerradar/images/navi.PNG"));
-    }    
-    
-    public void handleMenuButton(){
+    }
+
+    public void handleMenuButton() {
         try {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
@@ -47,11 +43,11 @@ public class FXMLRestaurantsController implements Initializable {
             System.out.println(ex.getMessage());
         }
     }
-    
-    public void handleImageViewClick(){
+
+    public void handleImageViewClick() {
         try {
             Parent window1;
-            window1 = FXMLLoader.load(getClass().getResource("FXMLRestaurant.fxml"));
+            window1 = FXMLLoader.load(getClass().getResource("FXMLOrderList.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
