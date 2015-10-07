@@ -70,4 +70,15 @@ public class FXMLMenuController implements Initializable {
             System.out.println(ex.getMessage());
         }
     }
+
+    public void handleGroupsButton() {
+        try {
+            Parent window1;
+            window1 = FXMLLoader.load(getClass().getResource("FXMLGroups.fxml"));
+            DönerRadar.currentStage.getScene().setRoot(window1);
+        }
+        catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 }

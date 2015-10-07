@@ -21,7 +21,7 @@
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button layoutX="5.0" layoutY="266.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Groepen">
+      <Button layoutX="5.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleGroupsButton" prefHeight="50.0" prefWidth="200.0" text="Groepen">
          <font>
             <Font size="24.0" />
          </font></Button>
