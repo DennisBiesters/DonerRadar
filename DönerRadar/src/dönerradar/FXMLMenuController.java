@@ -32,8 +32,7 @@ public class FXMLMenuController implements Initializable {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLHome.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
@@ -43,8 +42,7 @@ public class FXMLMenuController implements Initializable {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLNamePicker.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
@@ -54,8 +52,7 @@ public class FXMLMenuController implements Initializable {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLOrderList.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
@@ -65,16 +62,24 @@ public class FXMLMenuController implements Initializable {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLDebts.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
-    
-    public void handleRestaurantButton(){
+
+    public void handleRestaurantButton() {
         try {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLLocationFinder.fxml"));
+            DönerRadar.currentStage.getScene().setRoot(window1);
+        } catch (IOException ex) {
+        }
+    }
+
+    public void handleGroupsButton() {
+        try {
+            Parent window1;
+            window1 = FXMLLoader.load(getClass().getResource("FXMLGroups.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLGroupsController">
+   <children>
+      <Button fx:id="btnMenu" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleMenuButton" />
+      <Text layoutX="147.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groepen">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TreeView fx:id="tvGroups" layoutX="85.0" layoutY="71.0" prefHeight="329.0" prefWidth="200.0" />
+      <Button layoutX="85.0" layoutY="442.0" mnemonicParsing="false" onAction="#addGroup" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfGroupName" layoutX="149.0" layoutY="455.0" prefHeight="25.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>
