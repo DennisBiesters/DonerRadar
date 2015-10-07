@@ -15,7 +15,7 @@
          <image>
             <Image url="@images/doner.jpg" />
          </image></ImageView>
-      <Button layoutX="107.0" layoutY="456.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Döner zoeken" />
+      <Button layoutX="107.0" layoutY="456.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Zoek de beste döner" />
       <Text layoutX="142.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoofdmenu">
          <font>
             <Font size="20.0" />

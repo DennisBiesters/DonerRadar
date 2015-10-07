@@ -46,7 +46,7 @@ public class FXMLNamePickerController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        deelnemers = FXCollections.observableArrayList("Dennis", "Jordy", "Sven");
+        deelnemers = FXCollections.observableArrayList("Dennis", "Jordy", "Sven", "Jelle");
         lvDeelnemers.setItems(deelnemers);
     }    
     
