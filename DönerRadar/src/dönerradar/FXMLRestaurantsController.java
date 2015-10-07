@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 /**
@@ -41,6 +42,7 @@ public class FXMLRestaurantsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        iviewNavi.setImage(new Image("dönerradar/images/navi.PNG"));
     }    
     
     public void handleMenuButton(){
