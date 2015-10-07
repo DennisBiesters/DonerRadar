@@ -32,8 +32,21 @@ public class FXMLMenuController implements Initializable {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLHome.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
-        } catch (IOException ex) {
+        }
+        catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
+    }
+
+    public void handleNameChooserButton() {
+        try {
+            Parent window1;
+            window1 = FXMLLoader.load(getClass().getResource("FXMLNamePicker.fxml"));
+            DönerRadar.currentStage.getScene().setRoot(window1);
+        }
+        catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+
     }
 }
