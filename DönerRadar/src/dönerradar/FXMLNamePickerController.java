@@ -66,8 +66,8 @@ public class FXMLNamePickerController implements Initializable {
     {
         if (!tfDeelnemerNaam.getText().isEmpty())
         {
-            tfDeelnemerNaam.clear();
             deelnemers.add(tfDeelnemerNaam.getText());
+            tfDeelnemerNaam.clear();
         }  
     }
     
