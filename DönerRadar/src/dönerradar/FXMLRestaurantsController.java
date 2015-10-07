@@ -12,29 +12,35 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.image.Image;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
  *
- * @author Dennis
+ * @author jordy
  */
-public class FXMLHomeController implements Initializable {
+public class FXMLRestaurantsController implements Initializable {
 
-    @FXML
-    private Button btnMenu;
     
     @FXML
-    private ImageView imgView;
+    Label lblAddress01;
+    
+    @FXML
+    Label lblAddress02;
+    
+    @FXML
+    Label lblTitle;
+    
+    @FXML
+    ImageView iviewNavi;
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        imgView.setImage(new Image("dönerradar/images/doner.jpg"));
+        // TODO
     }    
     
     public void handleMenuButton(){
@@ -47,13 +53,4 @@ public class FXMLHomeController implements Initializable {
         }
     }
     
-    public void handleSearchButton(){
-        try {
-            Parent window1;
-            window1 = FXMLLoader.load(getClass().getResource("FXMLLocationFinder.fxml"));
-            DönerRadar.currentStage.getScene().setRoot(window1);
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
 }

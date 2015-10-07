@@ -13,29 +13,44 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
- * @author Dennis
+ * @author jordy
  */
-public class FXMLHomeController implements Initializable {
+public class FXMLLocationFinderController implements Initializable {
 
-    @FXML
-    private Button btnMenu;
     
     @FXML
-    private ImageView imgView;
+    private Button btnSearch;
+    
+    @FXML
+    private Label lblTitle;
+    
+    @FXML
+    private Label lblPostcode;
+    
+    @FXML
+    private TextField tbPostcode;
+    
+    
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        imgView.setImage(new Image("dönerradar/images/doner.jpg"));
+        // TODO
+
     }    
+    
+    public void handleButton() throws IOException {
+        Parent p = FXMLLoader.load(getClass().getResource("Restaurants.fxml"));
+        DönerRadar.currentStage.getScene().setRoot(p);
+    }
     
     public void handleMenuButton(){
         try {
@@ -47,13 +62,4 @@ public class FXMLHomeController implements Initializable {
         }
     }
     
-    public void handleSearchButton(){
-        try {
-            Parent window1;
-            window1 = FXMLLoader.load(getClass().getResource("FXMLLocationFinder.fxml"));
-            DönerRadar.currentStage.getScene().setRoot(window1);
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
 }

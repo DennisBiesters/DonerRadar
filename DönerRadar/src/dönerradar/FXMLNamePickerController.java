@@ -8,6 +8,7 @@ package dönerradar;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableArray;
@@ -21,6 +22,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -46,11 +48,11 @@ public class FXMLNamePickerController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        deelnemers = FXCollections.observableArrayList("Dennis", "Jordy", "Sven");
+        deelnemers = FXCollections.observableArrayList("Dennis", "Jordy", "Sven", "Jelle");
         lvDeelnemers.setItems(deelnemers);
     }    
     
-        public void handleMenuButton(){
+    public void handleMenuButton(){
         try {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
@@ -64,8 +66,16 @@ public class FXMLNamePickerController implements Initializable {
     {
         if (!tfDeelnemerNaam.getText().isEmpty())
         {
+            tfDeelnemerNaam.clear();
             deelnemers.add(tfDeelnemerNaam.getText());
         }  
+    }
+    
+    public void selectRandomPerson()
+    {
+        Random rand = new Random();
+        int index = rand.nextInt(deelnemers.size());
+        JOptionPane.showMessageDialog(null, deelnemers.get(index));
     }
     
     
