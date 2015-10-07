@@ -16,6 +16,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -32,7 +33,10 @@ public class FXMLDebtsController implements Initializable {
     @FXML
     private ListView lvPersonWithDebts;
     
-    private ObservableList<String> personsWithDept;
+    @FXML
+    private TextField tbAddDebt;
+    
+    private ObservableList<String> personsWithDebt;
     
     /**
      * Initializes the controller class.
@@ -40,8 +44,8 @@ public class FXMLDebtsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
-        personsWithDept = FXCollections.observableArrayList("Dennis €5,-", "Jordy €10,-", "Sven €13,-", "Jelle €133,-");
-        lvPersonWithDebts.setItems(personsWithDept);
+        personsWithDebt = FXCollections.observableArrayList("Dennis €5,-", "Jordy €10,-", "Sven €13,-", "Jelle €133,-");
+        lvPersonWithDebts.setItems(personsWithDebt);
     }    
     
     public void handleMenuButton(){
@@ -51,6 +55,13 @@ public class FXMLDebtsController implements Initializable {
             DönerRadar.currentStage.getScene().setRoot(window1);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
+        }
+    }
+    
+    public void handleAddButton(){
+        if(!(tbAddDebt.getText().isEmpty())){
+            personsWithDebt.add(tbAddDebt.getText());
+            tbAddDebt.clear();
         }
     }
 }
