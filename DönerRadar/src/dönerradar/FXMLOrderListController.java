@@ -55,15 +55,7 @@ public class FXMLOrderListController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         btnMenu.setGraphic(new ImageView(new Image("dönerradar/images/menu.png")));
 
-        listView.setItems(obsBestellijst);
-        listView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
-
-            @Override
-            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                
-            }
-        });
-        
+        listView.setItems(obsBestellijst); 
     }
 
     public void handleMenuButton() {
@@ -78,17 +70,21 @@ public class FXMLOrderListController implements Initializable {
     }
 
     public void handleBtAddOrderList() {
-        bestellijsten.add("Nieuwe lijst");
+        obsBestellijst.add("Nieuwe lijst");
     }
     
     public void handleBtSelectOrderList(){
           try {
             Parent window1;
+            System.out.println("1");
             window1 = FXMLLoader.load(getClass().getResource("FXMLOrderListItems.fxml"));
+            System.out.println("2");
             DönerRadar.currentStage.getScene().setRoot(window1);
+            System.out.println("3");
         }
         catch (IOException ex) {
             System.out.println(ex.getMessage());
+            System.out.println("KANKER ZOOI");
         }
     }
     

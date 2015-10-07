@@ -28,7 +28,7 @@ import javafx.scene.image.ImageView;
  *
  * @author Sven
  */
-public class FXMLOrderListItemsContoller implements Initializable {
+public class FXMLOrderListItemsController implements Initializable {
 
     @FXML
     private Button btnMenu;
