@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -10,6 +11,15 @@
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dönerradar.FXMLHomeController">
    <children>
       <Button fx:id="btnMenu" layoutY="-1.0" mnemonicParsing="false" onAction="#handleMenuButton" />
-      <ImageView fx:id="imgView" fitHeight="203.0" fitWidth="273.0" layoutX="98.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgView" fitHeight="203.0" fitWidth="273.0" layoutX="98.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/doner.jpg" />
+         </image></ImageView>
+      <Button layoutX="107.0" layoutY="456.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Zoek de beste döner" />
+      <Text layoutX="142.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoofdmenu">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
