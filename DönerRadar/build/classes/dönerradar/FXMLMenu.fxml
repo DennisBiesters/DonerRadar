@@ -13,6 +13,6 @@
       <Button layoutX="5.0" layoutY="192.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Bestellijst" />
       <Button layoutX="5.0" layoutY="260.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Groepen" />
       <Button layoutX="5.0" layoutY="333.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Schuldenlijst" />
-      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" text="Naamkiezer" />
+      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleNameChooserButton" prefHeight="31.0" prefWidth="145.0" text="Naamkiezer" />
    </children>
 </AnchorPane>
