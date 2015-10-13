@@ -27,6 +27,9 @@ public class FXMLRestaurantsController implements Initializable {
     private Button btnMenu;
     
     @FXML
+    private Button btnBack;
+    
+    @FXML
     private ImageView iviewNavi;
    
     /**

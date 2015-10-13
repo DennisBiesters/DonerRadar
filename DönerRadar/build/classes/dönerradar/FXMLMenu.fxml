@@ -29,7 +29,7 @@
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleNameChooserButton" prefHeight="50.0" prefWidth="200.0" text="Naamkiezer">
+      <Button layoutX="7.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleNameChooserButton" prefHeight="50.0" prefWidth="200.0" text="Afhaler kiezen">
          <font>
             <Font size="24.0" />
          </font></Button>

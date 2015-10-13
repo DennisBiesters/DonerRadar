@@ -32,7 +32,7 @@ public class FXMLOrderListItemsController implements Initializable {
 
     @FXML
     private Button btnMenu;
-  
+
     @FXML
     private ListView listView;
 
@@ -54,10 +54,10 @@ public class FXMLOrderListItemsController implements Initializable {
 
             @Override
             public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                
+
             }
         });
-        
+
     }
 
     public void handleMenuButton() {
@@ -65,8 +65,17 @@ public class FXMLOrderListItemsController implements Initializable {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
         }
-        catch (IOException ex) {
+    }
+
+    public void handleBackButton() {
+        try {
+            Parent window1;
+            window1 = FXMLLoader.load(getClass().getResource("FXMLOrderList.fxml"));
+            DönerRadar.currentStage.getScene().setRoot(window1);
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
@@ -74,5 +83,5 @@ public class FXMLOrderListItemsController implements Initializable {
     public void handleBtAddProduct() {
         obsProductList.add("Turkse pizza");
     }
-    
+
 }

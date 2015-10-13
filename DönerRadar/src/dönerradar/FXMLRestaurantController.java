@@ -26,6 +26,9 @@ public class FXMLRestaurantController implements Initializable {
     @FXML
     private Button btnMenu;
 
+    @FXML
+    private Button btnBack;
+
     /**
      * Initializes the controller class.
      */
@@ -38,6 +41,16 @@ public class FXMLRestaurantController implements Initializable {
         try {
             Parent window1;
             window1 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
+            DönerRadar.currentStage.getScene().setRoot(window1);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    public void handleBackButton() {
+        try {
+            Parent window1;
+            window1 = FXMLLoader.load(getClass().getResource("FXMLRestaurants.fxml"));
             DönerRadar.currentStage.getScene().setRoot(window1);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());

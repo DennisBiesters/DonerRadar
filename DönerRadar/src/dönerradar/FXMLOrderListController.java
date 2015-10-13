@@ -76,19 +76,18 @@ public class FXMLOrderListController implements Initializable {
     public void handleBtSelectOrderList(){
           try {
             Parent window1;
-            System.out.println("1");
             window1 = FXMLLoader.load(getClass().getResource("FXMLOrderListItems.fxml"));
-            System.out.println("2");
             DönerRadar.currentStage.getScene().setRoot(window1);
-            System.out.println("3");
         }
         catch (IOException ex) {
             System.out.println(ex.getMessage());
-            System.out.println("KANKER ZOOI");
         }
     }
     
     public void handleDeleteOrderList(){
-        
+        if (listView.getSelectionModel().getSelectedItem() != null)
+        {
+            obsBestellijst.remove(listView.getSelectionModel().getSelectedItem());
+        }
     }
 }

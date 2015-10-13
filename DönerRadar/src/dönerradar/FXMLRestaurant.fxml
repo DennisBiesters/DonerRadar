@@ -22,5 +22,10 @@
             <Image url="@images/restaurant_menu.png" />
          </image>
       </ImageView>
+      <Button fx:id="btnBack" layoutX="358.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleBackButton" text="&lt;-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
