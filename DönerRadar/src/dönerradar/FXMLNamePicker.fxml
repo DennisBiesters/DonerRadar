@@ -21,7 +21,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="88.0" layoutY="511.0" mnemonicParsing="false" onAction="#selectRandomPerson" text="Selecteer een willekeurige naam">
+      <Button layoutX="88.0" layoutY="511.0" mnemonicParsing="false" onAction="#selectRandomPerson" text="Selecteer een willekeurig persoon">
          <font>
             <Font size="16.0" />
          </font>
